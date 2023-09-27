@@ -28,3 +28,15 @@
         width: 150px;
     }
 }
+
+
+
+/* HEADER RESPONSIVE */
+
+@media (min-width: 992px){
+
+    .d-lg-inline-block {
+        display: inline-block!important;
+        max-width: 100%;
+    }
+}

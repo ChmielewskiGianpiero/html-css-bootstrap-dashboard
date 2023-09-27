@@ -9,6 +9,7 @@ ul,
 ol,
 menu {
 	list-style: none;
+    margin: 0;
 }
 
 img {
@@ -19,6 +20,9 @@ img {
 
 :root{
     --dark-blue: #051E34;
+    --light-grey: #E5E5E5;
+    --light:#FFFFFF;
+    --orange:#FF8F00;
 }
 
 /* LAYOUT */
@@ -36,6 +40,8 @@ img {
 .app{
     height: 100vh;
 }
+
+
 
 
 
@@ -60,17 +66,57 @@ img {
 }
 
 
+
+/* HEADER */
+
+.app-header ::placeholder{
+    font-weight: 600;
+}
+
+.form-control{
+    background-color: var(--light-grey);
+}
+
+.btn.active,
+.btn.show, 
+.btn:first-child:active{
+    border-color: var(--light);
+}
+
+.btn{
+    --bs-btn-padding-x: 0; 
+    --bs-btn-padding-y: 0;
+}
+
+.fa-bell{
+    color: var(--orange);
+}
+
+.header-icon{
+    margin: 10 ;
+}
+
+.mobile-logo{
+    max-width: 80px;
+}
+.bell
+
+
 /* DEBUG */
 
 .app-header{
-    border: 10px solid black;
+    border: 1px solid black;
 }
 
 .app-main{
-    border: 10px solid black;
+    border: 1px solid black;
 }
 
 .ms-nav,
 .main-content{
-    border: 1px solid red;
+    /* border: 1px solid red; */
+}
+
+[class*="col-"]{
+    /* border: 2px solid darkgreen; */
 }

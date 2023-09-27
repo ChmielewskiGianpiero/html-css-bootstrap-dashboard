@@ -12,7 +12,36 @@
 <body>
     <div class="app d-flex flex-column">
     
-        <div class="app-header">header</div>
+        <div class="app-header">
+            <div class="container-fluid py-2">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <img class="d-sm-none d-lg-inline-block" src="./img/logo.svg" alt="">
+                        <img class="d-sm-inline-block d-lg-none mobile-logo" src="./img/mobile-logo.png" alt="">
+                    </div>
+                    <div class="col-8">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="&#xf3eb Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                        </form>
+                    </div>
+                    <ul class="col-2 d-flex gap-4 justify-content-center fs-5">
+                        <li><i class="fa-solid fa-list header-icon d-sm-none d-lg-inline-block"></i></li>
+                        <li><i class="fa-solid fa-circle-question py-8 d-sm-none d-lg-inline-block"></i></li>
+                        <li><i class="fa-solid fa-ellipsis-vertical py-8 d-sm-none d-lg-inline-block"></i></li>
+                        <li class="bell-icon">
+                            <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-bell"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Profilo</a></li>
+                              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                              <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         <div class="app-main d-flex flex-grow-1">
             <div class="ms-nav py-4 text-light d-flex flex-column">
