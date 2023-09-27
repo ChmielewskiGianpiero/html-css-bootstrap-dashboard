@@ -1,3 +1,26 @@
+/* RESET */
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+ul,
+ol,
+menu {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* PALETTE COLORS */
+
+:root{
+    --dark-blue: #051E34;
+}
+
 /* LAYOUT */
 
 .app,
@@ -16,6 +39,27 @@
 
 
 
+/* NAV */
+
+.ms-nav{
+    background-image: url(../img/sidebar-bg.png);
+    background-color: var(--dark-blue) ;
+}
+
+.nav-icon{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.fa-chart-simple{
+    margin-right: 10px;
+}
+
+.setting-nav{
+    padding-left: 32px;
+}
+
+
 /* DEBUG */
 
 .app-header{
@@ -26,7 +70,7 @@
     border: 10px solid black;
 }
 
-.nav,
+.ms-nav,
 .main-content{
-    border: 10px solid red;
+    border: 1px solid red;
 }

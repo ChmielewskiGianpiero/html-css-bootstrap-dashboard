@@ -17,14 +17,14 @@
 /* NAV RESPONSIVE */
 
 @media (min-width: 576px) {
-    .nav{
-        width: 100px;
+    .ms-nav{
+        width: 90px;
     }
 }
 
 
 @media (min-width: 992px) {
-    .nav{
-        width: 200px;
+    .ms-nav{
+        width: 150px;
     }
 }

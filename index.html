@@ -15,7 +15,26 @@
         <div class="app-header">header</div>
 
         <div class="app-main d-flex flex-grow-1">
-            <div class="nav">nav</div>
+            <div class="ms-nav py-4 text-light d-flex flex-column">
+                <ul class="ms-menu d-flex flex-column gap-3 flex-grow-1">
+                    <li>
+                        <i class="fa-solid fa-house nav-icon"></i>
+                        <span class="d-sm-none d-lg-inline-block">Home</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-chart-simple nav-icon"></i>
+                        <span class="d-sm-none d-lg-inline-block">Stats</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-signal nav-icon"></i>
+                        <span class="d-sm-none d-lg-inline-block">Signals</span>
+                    </li>
+                </ul>
+                <div class="setting-nav">
+                    <i class="fa-solid fa-gear nav-icon"></i>
+                    <span class="d-sm-none d-lg-inline-block">Admin</span>
+                </div>
+            </div>
             <div class="main-content flex-grow-1">content</div>
         </div>
 
