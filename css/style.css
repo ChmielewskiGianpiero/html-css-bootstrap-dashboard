@@ -1,0 +1,32 @@
+/* LAYOUT */
+
+.app,
+.app-main,
+.app-header{
+    overflow: hidden;
+}
+
+.main-content{
+    overflow: auto;
+}
+
+.app{
+    height: 100vh;
+}
+
+
+
+/* DEBUG */
+
+.app-header{
+    border: 10px solid black;
+}
+
+.app-main{
+    border: 10px solid black;
+}
+
+.nav,
+.main-content{
+    border: 10px solid red;
+}
