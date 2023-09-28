@@ -9,6 +9,7 @@ ul,
 ol,
 menu {
 	list-style: none;
+    margin: 0;
 }
 
 img {
@@ -19,6 +20,11 @@ img {
 
 :root{
     --dark-blue: #051E34;
+    --blue: #1B72E8;
+    --blue-1: #165BBA;
+    --light-grey: #E5E5E5;
+    --light:#FFFFFF;
+    --orange:#FF8F00;
 }
 
 /* LAYOUT */
@@ -36,6 +42,8 @@ img {
 .app{
     height: 100vh;
 }
+
+
 
 
 
@@ -60,17 +68,92 @@ img {
 }
 
 
+
+/* HEADER */
+
+.app-header ::placeholder{
+    font-weight: 600;
+}
+
+.form-control{
+    background-color: var(--light-grey);
+}
+
+.btn.active,
+.btn.show, 
+.btn:first-child:active{
+    border-color: var(--light);
+}
+
+.btn{
+    --bs-btn-padding-x: 0; 
+    --bs-btn-padding-y: 0;
+}
+
+.fa-bell{
+    color: var(--orange);
+}
+
+.header-icon{
+    margin: 10 ;
+}
+
+.mobile-logo{
+    max-width: 80px;
+}
+
+
+
+/* MAIN-CONTENT */
+
+.header-main-content{
+    background-color: var(--blue) ;
+}
+
+.header-main-content .btn{
+    border-radius: 999px;
+}
+
+.ms-fs{
+    font-size: 14px;
+}
+
+.btn-bd-primary {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--blue-1);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+    --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+    --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+  }
+/* .pages-header-main-content{
+    max-width: 110%;
+} */
+
+
 /* DEBUG */
 
 .app-header{
-    border: 10px solid black;
+    border: 1px solid black;
 }
 
 .app-main{
-    border: 10px solid black;
+    border: 1px solid black;
 }
 
 .ms-nav,
 .main-content{
-    border: 1px solid red;
+    /* border: 1px solid red; */
+}
+
+.main-content .container-fluid{
+    border: 2px solid red;
+}
+
+[class*="col-3"]{
+    border: 2px solid darkgreen;
 }
