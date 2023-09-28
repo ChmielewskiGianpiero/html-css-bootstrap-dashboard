@@ -40,3 +40,29 @@
         max-width: 100%;
     }
 }
+
+
+/* HEADER MAIN CONTENT RESPONSIVE */
+
+@media (min-width: 576px) {
+    
+    .header-main-content-responsive{
+        flex-direction: column;
+    }
+
+    .offcanvas-col{
+        order: -1;
+    }
+}
+
+@media (min-width: 768px) { 
+   
+    .offcanvas-col{
+        order: 0;
+        justify-content: center;
+    }
+
+    .header-main-content-responsive{
+        flex-direction: row;
+    }
+}

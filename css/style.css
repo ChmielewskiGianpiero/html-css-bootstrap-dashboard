@@ -20,6 +20,11 @@ img {
 	max-width: 100%;
 }
 
+input{
+    border-radius: 7px;
+    border-color: lightgrey;
+}
+
 /* PALETTE COLORS */
 
 :root{
@@ -30,6 +35,8 @@ img {
     --light:#FFFFFF;
     --orange:#FF8F00;
 }
+
+--#{$prefix}offcanvas-width: #{$offcanvas-horizontal-width};
 
 /* LAYOUT */
 
@@ -55,7 +62,12 @@ img {
 
 .ms-nav{
     background-image: url(../img/sidebar-bg.png);
-    background-color: var(--dark-blue) ;
+    background-color: var(--dark-blue);
+}
+
+.ms-menu,
+.setting-nav{
+    padding: 0 15px;
 }
 
 .nav-icon{
@@ -65,10 +77,6 @@ img {
 
 .fa-chart-simple{
     margin-right: 10px;
-}
-
-.setting-nav{
-    padding-left: 32px;
 }
 
 
@@ -81,6 +89,20 @@ img {
 
 .form-control{
     background-color: var(--light-grey);
+}
+
+.ms-search-bar{
+    position: relative;
+}
+
+.ms-search-bar i{
+    position: absolute;
+    top: 11px;
+    left: 8px;
+}
+
+.ms-search-bar input{
+    padding-left: 42px;
 }
 
 .btn.active,
@@ -96,6 +118,7 @@ img {
 
 .fa-bell{
     color: var(--orange);
+    font-size: 20px;
 }
 
 .header-icon{
@@ -113,6 +136,11 @@ img {
 .header-main-content{
     background-color: var(--blue);
 }
+
+/* .header-main-content-responsive{
+    flex-direction: column;
+} */
+
 
 .header-main-content .btn{
     border-radius: 999px;
@@ -133,17 +161,52 @@ img {
     --bs-btn-active-color: var(--bs-btn-hover-color);
     --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
     --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
-  }
+}
+
+.offcanvas-col{
+    padding-top: 20px;
+    /* order: -1; */
+}
+
+.ms-button-canvas{
+    background-color: transparent;
+    width: 40px;
+    color: white;
+    height: 40px;
+    border: 1px solid white;
+}
+
+.offcanvas.offcanvas-end{
+    width: 50%;
+}
+
+.offcanvas-body {
+    flex-grow: 1;
+    padding: 7px;
+    overflow-y: auto;
+    color: black;
+    font-weight: 500;
+}
+
+.form-offcanvas{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.file-input{
+    border: 1px solid grey;
+}
 
 
 /* DEBUG */
 
 .app-header{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .app-main{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .ms-nav,
@@ -152,9 +215,9 @@ img {
 }
 
 .main-content .container-fluid{
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 [class*="col-3"]{
-    border: 2px solid darkgreen;
+    /* border: 2px solid darkgreen; */
 }

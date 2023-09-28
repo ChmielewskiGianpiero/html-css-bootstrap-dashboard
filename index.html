@@ -20,8 +20,9 @@
                         <img class="d-sm-inline-block d-lg-none mobile-logo" src="./img/mobile-logo.png" alt="">
                     </div>
                     <div class="col-8">
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="&#xf3eb Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                        <form class="d-flex ms-search-bar" role="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
                         </form>
                     </div>
                     <ul class="col-2 d-flex gap-4 justify-content-center fs-5">
@@ -59,15 +60,15 @@
                         <span class="d-sm-none d-lg-inline-block">Signals</span>
                     </li>
                 </ul>
-                <div class="setting-nav">
+                <div class="setting-nav padding-left">
                     <i class="fa-solid fa-gear nav-icon"></i>
                     <span class="d-sm-none d-lg-inline-block">Admin</span>
                 </div>
             </div>
             <div class="main-content flex-grow-1">
                 <div class="container-fluid header-main-content">
-                    <div class="row justify-content-between">
-                        <div class="col-6 py-3">
+                    <div class="row justify-content-between header-main-content-responsive">
+                        <div class="col-5 py-3">
                             <div class="d-flex gap-3 align-items-center">
                                <h1 class="fs-4 text-light">Boolean</h1>
                                <span class="btn btn-bd-primary px-2">Piano blaze</span> 
@@ -75,18 +76,99 @@
                             <div class="pages-header-main-content">
                                 <span class="btn btn-bd-primary px-2 ms-fs">3 app</span>
                                 <span>>></span>
-                                <span class="btn btn-bd-primary px-2 ms-fs">Boolean mobile app</span>
-                                <span class="btn btn-bd-primary px-2 ms-fs">Boolean web app</span>
-                                <span class="btn btn-bd-primary px-2 ms-fs">Boolean web app</span>
+                                <span class="btn btn-bd-primary px-2 ms-fs d-lg-none">+</span>
+                                <span class="btn btn-bd-primary px-2 ms-fs d-sm-none d-lg-inline-block">Boolean mobile app</span>
+                                <span class="btn btn-bd-primary px-2 ms-fs d-sm-none d-lg-inline-block">Boolean web app</span>
+                                <span class="btn btn-bd-primary px-2 ms-fs d-sm-none d-lg-inline-block">Boolean web app</span>
                              </div>
                         </div>
-                        <div class="col-3 py-3 text-light">
+                        <div class="col-sm-12 col-md-3 py-2 text-light">
                             <p>Studenti online negli ultimi 30 minuti </p>
                             <p class="fs-2">125</p>
                         </div>
-                        <div class="col-3">ciao</div>
+                        <div class="col-sm-12 col-md-3 gap-sm-3 gap-md-2 gap-lg-4 align-items-start d-flex text-light offcanvas-col">
+                            <p>Nuovo Studente</p>
+                            <button class="ms-button-canvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Offcanvas -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <form class="form-offcanvas" action="">
+                    <div class="d-flex gap-2 px-1">
+                        <div class="col-6 d-flex flex-column">
+                            <p>Nome</p>
+                            <input type="text">
+                        </div>
+                        <div class="col-6 d-flex flex-column">
+                            <p>Cognome</p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2 px-1">
+                        <div class="col-6 d-flex flex-column">
+                            <p>Email</p>
+                            <input type="email">
+                        </div>
+                        <div class="col-6 d-flex flex-column">
+                            <p>Password</p>
+                            <input type="password">
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2 px-1">
+                        <div class="col-6 d-flex flex-column">
+                            <p>Indirizzo Email</p>
+                            <input type="email">
+                        </div>
+                        <div class="col-6 d-flex flex-column">
+                            <p>Password</p>
+                            <input type="password">
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex flex-column">
+                        <p>Indirizzo</p>
+                        <input type="text">
+                    </div>
+                    <div class="d-flex gap-2 px-1">
+                        <div class="col-5 d-flex flex-column">
+                            <p>Città</p>
+                            <input type="text">
+                        </div>
+                        <div class="col-4 d-flex flex-column">
+                            <p>Stato</p>
+                            <select name="Country" id="">
+                                <option value="Italy">Scegli..</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Italy">Italy</option>
+                            </select>
+                        </div>
+                        <div class="col-2 d-flex flex-column">
+                            <p>CAP</p>
+                            <input type="number" name="" id="">
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex flex-column">
+                        <p>Foto</p>
+                        <input class="file-input" type="file">
+                    </div>
+                    <div class="col-12 d-flex gap-2">
+                        <input type="checkbox">
+                        <p>Seleziona per proseguire</p>
+                    </div>
+                    <div class="col-12 d-flex gap-2">
+                        <button type="button" class="btn btn-primary py-1 px-1">Salva</button>
+                        <button type="button" class="btn btn-warning py-1 px-1">Svuota</button>
+                    </div>
+                </form>   
             </div>
         </div>
 
