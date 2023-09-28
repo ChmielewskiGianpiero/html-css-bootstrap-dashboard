@@ -5,6 +5,10 @@ a {
 	color: currentColor;
 }
 
+p{
+    margin: 0;
+}
+
 ul,
 ol,
 menu {
@@ -20,11 +24,8 @@ img {
 
 :root{
     --dark-blue: #051E34;
-<<<<<<< HEAD
     --blue: #1B72E8;
     --blue-1: #165BBA;
-=======
->>>>>>> 0cad5ed6429c45089c68431c7a2c9d674bed7221
     --light-grey: #E5E5E5;
     --light:#FFFFFF;
     --orange:#FF8F00;
@@ -104,14 +105,13 @@ img {
 .mobile-logo{
     max-width: 80px;
 }
-<<<<<<< HEAD
 
 
 
 /* MAIN-CONTENT */
 
 .header-main-content{
-    background-color: var(--blue) ;
+    background-color: var(--blue);
 }
 
 .header-main-content .btn{
@@ -134,12 +134,6 @@ img {
     --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
     --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
   }
-/* .pages-header-main-content{
-    max-width: 110%;
-} */
-=======
-.bell
->>>>>>> 0cad5ed6429c45089c68431c7a2c9d674bed7221
 
 
 /* DEBUG */
@@ -157,15 +151,10 @@ img {
     /* border: 1px solid red; */
 }
 
-<<<<<<< HEAD
 .main-content .container-fluid{
     border: 2px solid red;
 }
 
 [class*="col-3"]{
     border: 2px solid darkgreen;
-=======
-[class*="col-"]{
-    /* border: 2px solid darkgreen; */
->>>>>>> 0cad5ed6429c45089c68431c7a2c9d674bed7221
 }
