@@ -198,7 +198,7 @@ input{
 
 /* MAIN  */
 
-/* table */
+/* table card */
 
 .logo-class{
     max-width: 25px;
@@ -218,6 +218,21 @@ input{
     text-align: center;
 }
 
+/* accordion card */
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--light);
+}
+
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+.accordion-body-text{
+    color: green;
+    font-weight: 600;
+}
 /* DEBUG */
 
 .app-header{
