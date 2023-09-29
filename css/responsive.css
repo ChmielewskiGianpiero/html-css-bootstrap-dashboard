@@ -66,3 +66,23 @@
         flex-direction: row;
     }
 }
+
+
+/* MAIN RESPONSIVE */
+
+/* table */
+
+@media (min-width: 576px) {
+    
+    .ms-table-w{
+        width: 32%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .ms-table-w{
+        width: 50%;
+    }
+
+}

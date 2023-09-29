@@ -41,8 +41,7 @@ input{
 /* LAYOUT */
 
 .app,
-.app-main,
-.app-header{
+.app-main{
     overflow: hidden;
 }
 
@@ -199,6 +198,7 @@ input{
 /* MAIN  */
 
 /* table card */
+
 
 .logo-class{
     max-width: 25px;
