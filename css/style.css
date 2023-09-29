@@ -233,6 +233,13 @@ input{
     color: green;
     font-weight: 600;
 }
+
+/* img card */
+
+.ms-color-link{
+    color: var(--blue);
+    text-decoration: underline;
+}
 /* DEBUG */
 
 .app-header{
